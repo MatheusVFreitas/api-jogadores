@@ -1,6 +1,9 @@
 package models
 
+import "gorm.io/gorm"
+
 type Jogador struct {
+	gorm.Model
 	Nome    string `json: "nome"`
 	Time    string `json: "time"`
 	Posicao string `json: "posicao"`
