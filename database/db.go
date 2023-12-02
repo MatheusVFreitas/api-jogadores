@@ -3,6 +3,7 @@ package database
 import (
 	"log"
 
+	"github.com/MatheusVFreitas/go-api-jogadores/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -18,4 +19,5 @@ func ConectaComBancoDeDados() {
 	if err != nil {
 		log.Panic("Erro ao conectar com o Banco de Dados.")
 	}
+	DB.AutoMigrate(&models.Jogador{})
 }

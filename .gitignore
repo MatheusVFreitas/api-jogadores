@@ -9,3 +9,6 @@
 
 #Coverage
 *.out
+
+postgres-data folder
+postgres-data /
